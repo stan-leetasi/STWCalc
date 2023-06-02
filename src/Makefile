@@ -46,7 +46,7 @@ stwcalc: stwcalc.o engine.o libmath_library.so
 	$(CC) stwcalc.o engine.o -o $@ -L. -lmath_library $(GTK_LIBS)
 
 stwcalc.o: app.c engine.h
-	$(CC) $(GTK_FLAGS) -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_4_2 -c $< -o $@ -DDEBUG
+	$(CC) $(GTK_FLAGS) -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_4_2 -c $< -o $@
 
 engine_io: engine_io.o engine.o math_library.o
 	${CC} ${CFLAGS} $^ -o $@
