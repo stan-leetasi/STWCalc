@@ -420,14 +420,14 @@ static void gui_backspace(GtkWidget *widget, gpointer data)
 
 static void gui_send_digit(GtkWidget *widget, char digit)
 {
-    change_text_based_on_result(caleng_send_digit(CALC_ENGINE, digit));
+    change_text_based_on_result(caleng_insert_digit(CALC_ENGINE, digit));
 }
 
 static void gui_send_three_zeros(GtkWidget *widget, gpointer data)
 {
-    caleng_send_digit(CALC_ENGINE, '0');
-    caleng_send_digit(CALC_ENGINE, '0');
-    change_text_based_on_result(caleng_send_digit(CALC_ENGINE, '0'));
+    caleng_insert_digit(CALC_ENGINE, '0');
+    caleng_insert_digit(CALC_ENGINE, '0');
+    change_text_based_on_result(caleng_insert_digit(CALC_ENGINE, '0'));
 }
 
 static void gui_insert_exp(GtkWidget *widget, gpointer data)
@@ -463,14 +463,14 @@ static void gui_select_bi_op(GtkWidget *widget, int bi_op)
 static void gui_power_to(GtkWidget *widget, int value)
 {
     caleng_select_bi_op(CALC_ENGINE, POW);
-    caleng_send_digit(CALC_ENGINE, value + '0');
+    caleng_insert_digit(CALC_ENGINE, value + '0');
     change_text_based_on_result(caleng_evaluate(CALC_ENGINE));
 }
 
 static void gui_root_of(GtkWidget *widget, int value)
 {
     caleng_select_bi_op(CALC_ENGINE, ROOT);
-    caleng_send_digit(CALC_ENGINE, value + '0');
+    caleng_insert_digit(CALC_ENGINE, value + '0');
     change_text_based_on_result(caleng_evaluate(CALC_ENGINE));
 }
 

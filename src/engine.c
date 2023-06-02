@@ -250,7 +250,7 @@ result_t caleng_backspace(engine_t *eng)
     return r;
 }
 
-result_t caleng_send_digit(engine_t *eng, char digit)
+result_t caleng_insert_digit(engine_t *eng, char digit)
 {
     assert(eng != NULL);
     assert(digit >= '0' && digit <= '9');
@@ -364,7 +364,7 @@ result_t caleng_insert_exp(engine_t *eng)
             // no non-zero digit was inserted --- cases: "", "0", "-0" "...e0" "...e-0"
             if (non_zero_digits_detected == 0)
             {
-                caleng_send_digit(eng, '1');
+                caleng_insert_digit(eng, '1');
                 i = strlen(eng->input_buffer);
             }
             eng->input_buffer[i] = 'e';
@@ -406,7 +406,7 @@ result_t caleng_insert_decimal_point(engine_t *eng)
         {
             if (non_zero_digits_detected == 0)
             {
-                caleng_send_digit(eng, '0');
+                caleng_insert_digit(eng, '0');
             }
             i = strlen(eng->input_buffer);
             eng->input_buffer[i] = eng->dp_sep;

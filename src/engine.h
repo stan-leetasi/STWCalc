@@ -131,9 +131,8 @@ result_t caleng_backspace(engine_t *eng);
  * @details
  * If the first digit in the input buffer is 0 then the next digit replaces the first zero.
  * Last processed value is thrown away when user inputs something into the input buffer.
- * @todo Proper result printing
  */
-result_t caleng_send_digit(engine_t *eng, char digit);
+result_t caleng_insert_digit(engine_t *eng, char digit);
 
 /**
  * @brief Inserts 'e' to the buffer and starts a mode for exponent input
