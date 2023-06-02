@@ -14,7 +14,7 @@ The team was composed of 4 members. Here are listed parts of the project that ea
     - Make
 - František Holáň
     - implementation of math library
-    - *program for calculation of mstandard deviation*
+    - *program for calculation of standard deviation*
     - *program profiling with gprof*
 - Stanislav Letaši
     - header for the math library
