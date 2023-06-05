@@ -2,7 +2,7 @@
 A simple lightweight calculator for Linux Ubuntu distributions.
 The app is written in C and uses GTK+ GUI library and GoogleTest testing framework.
 
-![](/screenshots/Demonstration.gif)
+![](/screenshots/demonstration.gif)
 
 ## Development
 This calculator was a part of a team project at BUT FIT.
