@@ -37,12 +37,12 @@ GTK adapts its GUI to the current system's theme.
 
 1. Compile the code with the provided makefile:
 
-make stwcalc
+`make stwcalc`
 
 2. Run the calculator with:
 
-make run
+`make run`
 
 3. Teardown - deletes all intermediate files and the stwcalc executable
 
-make clean
+`make clean`
