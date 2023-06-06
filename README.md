@@ -6,6 +6,7 @@ The app is written in C and uses GTK+ GUI library and GoogleTest testing framewo
 
 ## Development
 This calculator was a part of a team project at BUT FIT.
+<<<<<<< HEAD
 <style>
   .container {
     display: flex;
@@ -63,6 +64,27 @@ This calculator was a part of a team project at BUT FIT.
     <img src="/screenshots/STWorks_logo.jpg" alt="STWorks Logo" title="STWorks Logo">
   </div>
 </div>
+=======
+
+Our team was composed of 4 members:
+- Michal Krulich (team leader)
+    - GUI design and implementation
+    - engine of the calculator
+    - tests for the engine interface
+    - Make
+- František Holáň
+    - implementation of math library
+    - *program for calculation of standard deviation*
+    - *program profiling with gprof*
+- Stanislav Letaši
+    - header for the math library
+    - tests for the math library using the gtest suite
+    - *mockup of the next version*
+- Lukáš Španír
+    - *User manual*
+    - debian package (to be added)
+    - Doxyfile
+>>>>>>> parent of 9fc2875 (Added logo)
 
 
 Entries in *italic* are not included in this repository.
