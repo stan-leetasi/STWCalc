@@ -6,25 +6,10 @@ The app is written in C and uses GTK+ GUI library and GoogleTest testing framewo
 
 ## Development
 This calculator was a part of a team project at BUT FIT.
-
-Our team was composed of 4 members:
-- Michal Krulich (team leader)
-    - GUI design and implementation
-    - engine of the calculator
-    - tests for the engine interface
-    - Make
-- František Holáň
-    - implementation of math library
-    - *program for calculation of standard deviation*
-    - *program profiling with gprof*
-- Stanislav Letaši
-    - header for the math library
-    - tests for the math library using the gtest suite
-    - *mockup of the next version*
-- Lukáš Španír
-    - *User manual*
-    - debian package (to be added)
-    - Doxyfile
+<div>
+  <p>Our team was composed of 4 members:<br>- Michal Krulich (team leader)<br>    - GUI design and implementation<br>    - engine of the calculator<br>    - tests for the engine interface<br>    - Make<br>- František Holáň<br>    - implementation of math library<br>    - *program for calculation of standard deviation*<br>    - *program profiling with gprof*<br>- Stanislav Letaši<br>    - header for the math library<br>    - tests for the math library using the gtest suite<br>    - *mockup of the next version*<br>- Lukáš Španír<br>    - *User manual*<br>    - debian package (to be added)<br>    - Doxyfile<br></p>
+  <img src="/screenshots/STworks_logo.jpg" title="STWorks logo">
+</div>
 
 Entries in *italic* are not included in this repository.
 
